@@ -10,7 +10,7 @@ def pascal_triangle(n):
     # check for empty string
     if n <= 0:
         return []
-    
+
     triangle = []
     for i in range(n):
         row = [1]
