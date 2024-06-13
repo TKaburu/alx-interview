@@ -2,7 +2,13 @@
 
 def rotate_2d_matrix(matrix):
     """
-    This function otates a 2d matrix 90 degrees clockwise
+    Rotate a 2D matrix 90 degrees clockwise.
+
+    Args:
+        matrix (list[list]): The 2D matrix to rotate.
+
+    Returns:
+        None
     """
     length = len(matrix)
 
