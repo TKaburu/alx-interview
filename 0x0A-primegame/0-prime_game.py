@@ -12,21 +12,20 @@ def find_prime(n):
     num = 2  # This is the smallest prime number in the array list
     prime = []
     while num <= n:
-        prime_num = True # assuming the number is alread a prime number
+        prime_num = True  # assuming the number is alread a prime number
         # if num has a divisor greater than the square root
         # it must be divisible by number smaller than the square root
         # thats why we are using square root
         for x in range(2, int(num ** 0.5) + 1):
             if num % x == 0:
-                prime_num = False # because it is not a prime number
+                prime_num = False  # because it is not a prime number
                 break
         # add the prime number to the list
         if prime_num:
             prime.append(num)
-        num += 1 # on to the next number
+        num += 1  # on to the next number
     return prime
-            
-        
+
 
 def isWinner(x, nums):
     """
@@ -55,12 +54,10 @@ def isWinner(x, nums):
         else:
             bens_wins += 1
 
-
-    # the winner is 
+    # the winner is
     if bens_wins > marias_wins:
         return 'Ben'
     elif marias_wins > bens_wins:
         return 'Maria'
     else:
         return 'There is no winner'
-
